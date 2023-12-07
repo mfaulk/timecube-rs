@@ -30,6 +30,15 @@ impl TimeCube {
     pub fn rotate(&mut self) {
         self.instant.rotate_left(1);
     }
+
+    /// Universal Time Cube
+    pub fn utc(&self) -> String {
+        let mut utc = String::new();
+        for day in self.instant.iter() {
+            utc.push_str(&format!("{:?} ", day));
+        }
+        utc
+    }
 }
 
 /// 4-simultaneous 24-hour Days within a single rotation of Earth

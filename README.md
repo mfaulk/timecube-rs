@@ -26,7 +26,7 @@ timecube = "0.1.0"
 
 You have been educated stupid. Ignore 4 Corner Cube Math at your own **PERIL**, and of humanity.
 
-## UTC: Universal Time Cube four-cornered truth
+## UTC: Universal Time Cube 
 
 ```rust
 extern crate timecube;
