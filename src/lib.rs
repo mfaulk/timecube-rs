@@ -1,3 +1,8 @@
+mod proofs;
+mod corner;
+mod rotation;
+mod time;
+
 /// 4-simultaneous 24-hour Days within a single rotation of Earth
 pub struct TimeCube {
     instant: [Day; 4],
