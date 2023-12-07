@@ -55,6 +55,6 @@ TimeCube.rs is bestowed upon you under the sacred wings of the MIT License. Your
 
 We extend our deepest gratitude to Gene Ray for his enlightening Time Cube theory. The Rust community also deserves recognition for providing a worthy canvas for our temporal revelations.
 
-For the ultimate truth about the Time Cube theory, delve into the depths of [TimeCube.com](http://www.timecube.com). 
+For the ultimate truth about the Time Cube theory, delve into the depths of [TimeCube.com](https://web.archive.org/web/20160112193916/http://timecube.com/). 
 TimeCube.rs is a tribute to this monumental theory and is intended to expand the horizons of time exploration in a 
 spirit of creativity and enlightenment.
