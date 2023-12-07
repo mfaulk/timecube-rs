@@ -1,17 +1,19 @@
 /// 4-simultaneous 24-hour Days within a single rotation of Earth
 pub struct TimeCube {
-
+    instant: [Day; 4],
 }
 
 impl TimeCube {
     /// Time is Cubic and Absolute
     pub fn new() -> TimeCube {
-        TimeCube {}
+        TimeCube {
+            instant: [Day::SUN_UP, Day::MID_DAY, Day::SUN_DOWN, Day::MID_NIGHT],
+        }
     }
 
     /// Time is Cubic and Absolute
-    pub fn get_time(&self) -> Time {
-        Time::new()
+    pub fn get_time(&self) -> [Day; 4] {
+        self.instant.clone()
     }
 
     ///
@@ -20,13 +22,13 @@ impl TimeCube {
     }
 
     /// Opposite poles create opposite directions and opposite hemispheres.
-    pub fn opposite(&self, time: Time) -> Time {
-        time
+    pub fn opposite(&mut self) {
+        self.instant.reverse();
     }
 
     /// 4-simultaneous rotations of Earth within a single rotation of the Moon
-    pub fn rotate(&self, time: Time) -> Time {
-        time
+    pub fn rotate(&mut self) {
+        self.instant.rotate_left(1);
     }
 }
 
@@ -39,6 +41,7 @@ impl TimeCube {
 /// each Time corner point rotates through the other 3-corner Time points, thus creating 16 corners,
 /// 96 hours and 4-simultaneous 24-hour Days within a single rotation of Earth –
 /// equated to a Higher Order of Life Time Cube.
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub enum Day {
     SUN_UP,
     MID_DAY,
